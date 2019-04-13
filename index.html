@@ -1,27 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
-    
-    <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <div class="input-group-text">
-            <input type="checkbox" aria-label="Checkbox for following text input">
-          </div>
-        </div>
-        <input type="text" class="form-control" aria-label="Text input with checkbox">Test</input>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <div class="form-group" id="meats">
+                    <p>Pick your meat (choose one):</p>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="meats"
+                            id="roastBeef" aria-label="Checkbox for roast beef"><label class="form-check-label"
+                            for="roastBeef">Roast
+                            Beef</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="meats"
+                            id="cornedBeef" aria-label="Checkbox for corned beef"><label class="form-check-label"
+                            for="cornedBeed">Corned
+                            Beef</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="meats"
+                            id="turkey" aria-label="Checkbox for turkey"><label class="form-check-label" for="turkey">
+                            Turkey</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="meats"
+                            id="chicken" aria-label="Checkbox for chicken"> <label class="form-check-label"
+                            for="chicken"> Chicken</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="meats"
+                            id="bacon" aria-label="Checkbox for bacon"> <label class="form-check-label" for="bacon">
+                            Bacon</label></div>
+                </div>
+        
+                <div class="form-group">
+                    <p>Pick your bread (choose one):</p>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="breads"
+                            id="sourdough" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            Sourdough</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="breads"
+                            id="rosemaryParm" aria-label="Checkbox for ingredient you want"><label
+                            class="form-check-label" for="defaultCheck1">
+                            Rosemary Parmesian</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="breads"
+                            id="rye" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            Rye</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="breads"
+                            id="wheat" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            Wheat</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="breads"
+                            id="white" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            White</label></div>
+                </div>
+        
+                <div class="form-group">
+                    <p>Pick your cheese (choose one):</p>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="cheeses"
+                            id="provolone" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            Provolone</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="cheeses"
+                            id="cheddar" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            Cheddar</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="cheeses"
+                            id="swiss" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            Swiss</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="cheeses"
+                            id="asiago" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            Asiago</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="cheeses"
+                            id="monterey" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            Monterey</label></div>
+                </div>
+        
+                <div class="form-group">
+                    <p>Pick your condiment (choose one):</p>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="condiments"
+                            id="mustard" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            Mustard</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="condiments"
+                            id="mayonnaise" aria-label="Checkbox for ingredient you want"><label
+                            class="form-check-label" for="defaultCheck1">
+                            Mayonnaise</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="condiments"
+                            id="ketchup" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            Ketchup</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="condiments"
+                            id="bbqSauce" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            BBQ Sauce</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="condiments"
+                            id="ranch" aria-label="Checkbox for ingredient you want"><label class="form-check-label"
+                            for="defaultCheck1">
+                            Ranch</label></div>
+                    <div class="form-check"><input class="form-check-input" type="checkbox" value='' name="condiments"
+                            id="honeyMustard" aria-label="Checkbox for ingredient you want"><label
+                            class="form-check-label" for="defaultCheck1">
+                            Honey Mustard</label></div>
+                </div>
+        <button type="button" class="btn btn-info" id="orderBtn">Place Order</button>
+    </div>
+    </div>
+    </div>
+
     <div id="menu"></div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="module" src="./javascripts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./javascripts/main.js"></script>
 </body>
+
 </html>

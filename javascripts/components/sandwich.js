@@ -1,27 +1,19 @@
 import util from '../helpers/util.js';
+import store from './store.js'
 
-const sandwich = [];
-
-const getSammie = () => {
-    return sandwich;
-};
-
-const setSammie = (ingredient) => {
-    sandwich.push(ingredient);
-};
-
-// const sumSammie = (e) => {
-//     e.preventDefault();
-//     const mySammie = getSammie();
-//     const total = 0;
-//     //Foreeeeeach
-//     for(i=0; i<sandwich.length; i++){
+const sumSammie = (e) => {
+    e.preventDefault();
+    const allInfo = store.getAll();
+    const mySammie = store.makeSammie();
+    const total = 0;
+    //Foreeeeeach
+    for(i=0; i<mySammie.length; i++){
     
-//     total += mySammie.reduce((a, b) => {return a + b.sandwich[i]}, 0);
-//     };
-
-//     window.alert(`You owe ${total.toFixed(2)}`);
-// };
+    total += allInfo.reduce((a, b) => {return a + b.mySammie[i]}, 0);
+    };
+    console.log(total);
+    window.alert(`You owe ${total.toFixed(2)}`);
+};
 
 // const SammieToDom = () => {
 //     const mySammie = getSammie();
@@ -43,4 +35,6 @@ const setSammie = (ingredient) => {
 //     document.getElementById('purchase-btn').addEventListener('click', buyEvent);
 // };
 
-export default { setSammie, sammieToDom };
+export default { sumSammie };
+
+// , sammieToDom 
