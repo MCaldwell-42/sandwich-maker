@@ -10,14 +10,60 @@
 </head>
 <body>
     
-    <div class="input-group mb-3">
+    <div class="input-group form-group mb-3">
         <div class="input-group-prepend">
-          <div class="input-group-text">
-            <input type="checkbox" aria-label="Checkbox for following text input">
+          <div class="input-group-text d-flex flex-column">
+              <p>Pick your meat (choose one):</p>
+            <input type="checkbox" name="meats" id="roastBeef" aria-label="Checkbox for ingredient you want">  Roast Beef</input>
+            <input type="checkbox" name="meats" id="cornedBeef" aria-label="Checkbox for ingredient you want">  Corned Beef</input>
+            <input type="checkbox" name="meats" id="Turkey" aria-label="Checkbox for ingredient you want">  Turkey</input>
+            <input type="checkbox" name="meats" id="Chicken" aria-label="Checkbox for ingredient you want">  Chicken</input>
+            <input type="checkbox" name="meats" id="Bacon" aria-label="Checkbox for ingredient you want">  Bacon</input>
           </div>
         </div>
-        <input type="text" class="form-control" aria-label="Text input with checkbox">Test</input>
-      </div>
+    </div>
+        
+    
+    <div class="input-group form-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text d-flex flex-column">
+              <p>Pick your bread (choose one):</p>
+            <input type="checkbox" name="breads" id="sourdough" aria-label="Checkbox for ingredient you want">  Sourdough</input>
+            <input type="checkbox" name="breads" id="rosemaryParm" aria-label="Checkbox for ingredient you want">  Rosemary Parmesian</input>
+            <input type="checkbox" name="breads" id="rye" aria-label="Checkbox for ingredient you want">  Rye</input>
+            <input type="checkbox" name="breads" id="wheat" aria-label="Checkbox for ingredient you want">  Wheat</input>
+            <input type="checkbox" name="breads" id="white" aria-label="Checkbox for ingredient you want">  White</input>
+          </div>
+        </div>
+    </div>
+    <div class="input-group form-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text d-flex flex-column">
+              <p>Pick your cheese (choose one):</p>
+            <input type="checkbox" name="cheeses" id="provolone" aria-label="Checkbox for ingredient you want"> Provolone</input>
+            <input type="checkbox" name="cheeses" id="cheddar" aria-label="Checkbox for ingredient you want">  Cheddar</input>
+            <input type="checkbox" name="cheeses" id="swiss" aria-label="Checkbox for ingredient you want">  Swiss</input>
+            <input type="checkbox" name="cheeses" id="asiago" aria-label="Checkbox for ingredient you want">  Asiago</input>
+            <input type="checkbox" name="cheeses" id="monterey" aria-label="Checkbox for ingredient you want">  Monterey</input>
+          </div>
+        </div>
+    </div>
+    <div class="input-group form-group mb-3">
+        <div class="input-group-prepend">
+          <div class="input-group-text d-flex flex-column">
+              <p>Pick your condiment (choose one):</p>
+            <input type="checkbox" name="condiments" id="mustard" aria-label="Checkbox for ingredient you want">  Mustard</input>
+            <input type="checkbox" name="condiments" id="mayonnaise" aria-label="Checkbox for ingredient you want">  Mayonnaise</input>
+            <input type="checkbox" name="condiments" id="ketchup" aria-label="Checkbox for ingredient you want">  Ketchup</input>
+            <input type="checkbox" name="condiments" id="bbqSauce" aria-label="Checkbox for ingredient you want">  BBQ Sauce</input>
+            <input type="checkbox" name="condiments" id="ranch" aria-label="Checkbox for ingredient you want">  Ranch</input>
+            <input type="checkbox" name="condiments" id="honeyMustard" aria-label="Checkbox for ingredient you want">  Honey Mustard</input>
+        </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-info" id="orderBtn">Place Order</button>
+    
+ 
     <div id="menu"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
