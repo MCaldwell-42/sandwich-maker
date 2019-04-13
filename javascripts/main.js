@@ -1,8 +1,11 @@
 import store from './components/store.js'
 
+const addEventListener = () => {
+    document.getElementById('orderBtn').addEventListener('click', store.makeSammie);
+};
 const init = () => {
-    store.makeStore();
-    // store.addClickyBtns();
+    addEventListener();
+    // store.makeSammie();
 };
 
 init();
