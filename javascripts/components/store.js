@@ -29,7 +29,28 @@ const makeSammie = () => {
         }
     });
     console.log(sandwich);
-    return sandwich;
+    sumSammie(sandwich);
+};
+let total = 0;
+const sumSammie = (sandwich) => {
+    
+    sandwich.forEach((thing) => {
+        total += breadsInfo[thing]
+        total += meatsInfo[thing]
+        total += cheesesInfo[thing]
+        total += condimentsInfo[thing]
+            // total += breadsInfo.thing;
+        // } else if (thing === meatsInfo[thing]){
+        //     total += meatsInfo[thing];
+        // } else if (thing === cheesesInfo[thing]){
+        //     total += cheesesInfo[thing];
+        // } else if (thing === condimentsInfo[thing]){
+        //     total += condimentsInfo[thing];
+    });
+    
+    console.log(total);
+    window.alert(`You owe ${total.toFixed(2)}`);
 };
 
 export default { makeSammie, getAll };
+//    sandwich.Foreach((thing)=)
