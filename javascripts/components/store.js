@@ -9,15 +9,17 @@ const meatsInfo = meats.getMeat();
 const cheesesInfo = cheeses.getCheese();
 const breadsInfo = breads.getBread();
 const condimentsInfo = condiments.getCondiments();
-const all = [meatsInfo, cheesesInfo, breadsInfo, condimentsInfo];
+const all = Object.assign(meatsInfo, cheesesInfo, breadsInfo, condimentsInfo); 
+
 
 const getAll = () => {
     const meatsInfo = meats.getMeat();
 const cheesesInfo = cheeses.getCheese();
 const breadsInfo = breads.getBread();
 const condimentsInfo = condiments.getCondiments();
-const all = [meatsInfo, cheesesInfo, breadsInfo, condimentsInfo];
-    return all;
+const all = Object.assign(meatsInfo, cheesesInfo, breadsInfo, condimentsInfo);   
+console.log(all);
+return all;
 };
 
 const makeSammie = () => {
@@ -35,17 +37,7 @@ let total = 0;
 const sumSammie = (sandwich) => {
     
     sandwich.forEach((thing) => {
-        total += breadsInfo[thing]
-        total += meatsInfo[thing]
-        total += cheesesInfo[thing]
-        total += condimentsInfo[thing]
-            // total += breadsInfo.thing;
-        // } else if (thing === meatsInfo[thing]){
-        //     total += meatsInfo[thing];
-        // } else if (thing === cheesesInfo[thing]){
-        //     total += cheesesInfo[thing];
-        // } else if (thing === condimentsInfo[thing]){
-        //     total += condimentsInfo[thing];
+        total += all[thing];
     });
     
     console.log(total);
