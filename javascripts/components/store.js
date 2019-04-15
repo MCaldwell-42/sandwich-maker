@@ -9,15 +9,17 @@ const meatsInfo = meats.getMeat();
 const cheesesInfo = cheeses.getCheese();
 const breadsInfo = breads.getBread();
 const condimentsInfo = condiments.getCondiments();
-const all = [meatsInfo, cheesesInfo, breadsInfo, condimentsInfo];
+const all = Object.assign(meatsInfo, cheesesInfo, breadsInfo, condimentsInfo); 
+
 
 const getAll = () => {
     const meatsInfo = meats.getMeat();
 const cheesesInfo = cheeses.getCheese();
 const breadsInfo = breads.getBread();
 const condimentsInfo = condiments.getCondiments();
-const all = [meatsInfo, cheesesInfo, breadsInfo, condimentsInfo];
-    return all;
+const all = Object.assign(meatsInfo, cheesesInfo, breadsInfo, condimentsInfo);   
+console.log(all);
+return all;
 };
 
 const makeSammie = () => {
@@ -29,7 +31,18 @@ const makeSammie = () => {
         }
     });
     console.log(sandwich);
-    return sandwich;
+    sumSammie(sandwich);
+};
+let total = 0;
+const sumSammie = (sandwich) => {
+    
+    sandwich.forEach((thing) => {
+        total += all[thing];
+    });
+    
+    console.log(total);
+    window.alert(`You owe ${total.toFixed(2)}`);
 };
 
 export default { makeSammie, getAll };
+//    sandwich.Foreach((thing)=)
