@@ -4,7 +4,6 @@ import breads from '../helpers/breads.js';
 import condiments from '../helpers/condiments.js';
 import util from '../helpers/util.js';
 
-//do they not work if put out here? test
 const meatsInfo = meats.getMeat();
 const cheesesInfo = cheeses.getCheese();
 const breadsInfo = breads.getBread();
